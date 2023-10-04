@@ -1,0 +1,26 @@
+import java.util.*;
+public class LinearsearchExample
+{public static int linearsearch(int[]arr,int key){
+    for(int i=0;i<arr.length;i++){
+        if(arr[i]==key){return i;}
+    }
+
+	return -1;
+	
+}
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner(System.in);
+	    int n,ele;
+	     System.out.println(" enter size ");
+	     n=sc.nextInt();
+	    int a1[]=new int[n];
+	  for(int i=0;i<a1.length;i++){
+	      a1[i]=sc.nextInt();
+	  }
+	     System.out.println(" enter element ");
+	      ele=sc.nextInt();
+	      int flag=linearsearch(a1,ele);
+	      if(flag==-1){System.out.println("not found");}
+	      else{
+	    System.out.println("element is present at index"+flag);}
+	}}
