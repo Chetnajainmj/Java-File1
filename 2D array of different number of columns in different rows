@@ -1,0 +1,13 @@
+import java.util.*;
+public class LinearsearchExample{
+
+	public static void main(String[] args) {
+	     
+	    String a1[][]={{"Mr.","Mrs.","Ms."},{"Kumar"}};
+	
+	     
+	               
+	    System.out.println(a1[0][0]+" "+a1[1][0]);
+       System.out.println(a1[0][1]+" "+a1[1][0]);
+        System.out.println(a1[0][2]+" "+a1[1][0]);
+	}}
