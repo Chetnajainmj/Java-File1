@@ -1,0 +1,28 @@
+[11/10, 12:28 pm] Chetna Jain: class FinalDemo{
+    public final void display(){
+        System.out.println("this is final method");
+    }
+}
+
+public class Main extends FinalDemo{
+public final void display(){System.out.println("this is final method is overridden");}
+	public static void main(String[] args) {
+ Main obj=new Main();
+obj.display();
+
+	}
+}
+[11/10, 12:29 pm] Chetna Jain: class FinalDemo{
+    public void display(){
+        System.out.println("this is final method");
+    }
+}
+
+public class Main extends FinalDemo{
+public final void display(){System.out.println("this is final method is overridden");}
+	public static void main(String[] args) {
+ Main obj=new Main();
+obj.display();
+
+	}
+}
