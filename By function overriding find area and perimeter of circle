@@ -1,0 +1,27 @@
+//overriding area of circle
+class Shape{
+    public void area(int r){
+        System.out.println("area");
+    }
+     public void perimeter(int r){
+        System.out.println("perimeter");
+    }
+}
+class B{
+    public void area(int r){
+    
+        System.out.println("area="+3.14*r*r);
+    }
+     public void perimeter(int r){
+        System.out.println("perimeter="+2*3.14*r);
+    }
+}
+
+public class Main {
+	public static void main(String[] args) {
+B obj=new B();
+obj.area(5);
+obj.perimeter(5);
+
+	}
+}
