@@ -1,0 +1,29 @@
+//overriding and overloading
+class Parent{
+    void display(){
+        System.out.println("THIS IS PARENT CLASS");
+    }
+    void show(int num){
+         System.out.println("the number is in parent class"+num);
+    }
+}
+class Child extends Parent{
+    void display(){
+        System.out.println("THIS IS child CLASS");
+    }
+    void show(double num){
+         System.out.println("the number is in child class"+num);
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	Parent parentobj=new Parent();
+	Child childobj=new Child();
+	parentobj.show(5);
+	childobj.show(7.5);
+	parentobj.display();
+	childobj.display();
+	}
+}
