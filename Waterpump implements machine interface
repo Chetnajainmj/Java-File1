@@ -1,0 +1,22 @@
+interface Machine{
+     public void start();
+     public void stop();
+     
+     }
+ class Waterpump implements Machine
+{
+ public void start(){System.out.println("Start");}
+     public void stop(){System.out.println("Stop");}
+}
+     public class Testing{
+	public static void main(String[] args) {
+	    Machine m=new Waterpump();
+	    m.start();
+	    m.stop();
+	    paint(new Waterpump());	}
+
+	public static void paint(Machine n){
+	    n.stop();
+	    System.out.println("painting");
+	    n.start();
+	}}
