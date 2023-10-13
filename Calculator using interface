@@ -1,0 +1,35 @@
+interface calculator{
+     public void Add(int a, int b);
+     public void Subtract(int a,int b);
+     public void Multiply(double a,double b);
+     public void Divide(double a,double b);
+     }
+public class A implements calculator
+{ public void Add(int a,int b){
+    int sum=a+b;
+   System.out.println("sum="+sum);
+}
+ public void Subtract(int a,int b){
+     
+    System.out.println("a-b="+(a-b));
+}
+
+public void Multiply(double a,double b){
+     
+    System.out.println("a*b="+a*b);
+}
+public void Divide(double a,double b){
+     
+    System.out.println("a/b="+a/b);
+}
+
+
+	public static void main(String[] args) {
+	A a= new A();
+	a.Add(2,5);
+	a.Subtract(3,5);
+	a.Multiply(2.0,5.0);
+	a.Divide(16.0,8.0);
+
+	}
+}
