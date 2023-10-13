@@ -1,0 +1,23 @@
+interface solution{
+     public void Hello();
+     public void Welcome();
+     public void name(String n);
+     }
+public class A implements solution
+{ public void Hello(){
+   System.out.println("hello world");
+}
+ public void Welcome(){
+    System.out.println("welcome to endurekha");
+}
+public void name(String n ){
+        System.out.println("my name is "+n);
+
+}
+	public static void main(String[] args) {
+	A a= new A();
+	a.Hello();
+	a.Welcome();
+	a.name("Chetna Jain");
+	}
+}
