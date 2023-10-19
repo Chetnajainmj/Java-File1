@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{ 
+	public static void main(String[] args) { Scanner sc =new Scanner (System.in);
+	try{
+	    int dividebyzero=5/5;
+	    
+	}
+	
+	catch(ArithmeticException err ){
+	    System.out.println("Arithmetic exception"+err.getMessage());
+	    
+	}
+	finally{
+	    System.out.println("this is finally block");
+	}
+	
+	}
+}
