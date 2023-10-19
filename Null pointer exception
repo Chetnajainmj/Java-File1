@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{ 
+	public static void main(String[] args) { Scanner sc =new Scanner (System.in);
+	try{
+	    String s=null;
+	  int arr[]={10,20,30};  
+	    System.out.println(s.length()); 
+	      System.out.println(arr[3]); 
+	}
+	catch(ArrayIndexOutOfBoundsException e1 ){
+	    System.out.println("Execption index out of bounds"+e1);
+	    
+	}
+	catch(NullPointerException e2 ){
+	    System.out.println("Execption null pointer"+e2);
+	    
+	}
+	}
+}
