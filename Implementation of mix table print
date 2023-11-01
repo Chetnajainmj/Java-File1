@@ -1,0 +1,26 @@
+//implementation mix table print 
+import java.util.*;
+public class Table extends Thread
+{
+	public static void main(String[] args) {
+	 Table thread1=new Table();
+	   
+	     Table thread2=new Table();
+	    
+	    
+	     thread1.start();
+	     thread2.start();
+		System.out.println("This code is outside the thread");}
+		public void run(){
+		    System.out.println("which number table you want to print ");
+		    Scanner sc=new Scanner(System.in);
+		    int n=sc.nextInt();
+		    for(int i=1;i<=10;i++){
+		        	System.out.println(n+"*"+i+"="+n*i);
+		    }
+		    
+		    
+		}
+		
+	
+}
