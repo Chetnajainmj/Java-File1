@@ -1,0 +1,59 @@
+import java.util.*;
+class A{
+   static  String a="BJP";
+   static  String b="Congress";
+   static int bjp=0; 
+   static int congress=0;
+    public static void vote(String c){
+        if(c.equals(a)){
+            bjp++;
+        }
+        if(c.equals(b)){
+            congress++;
+        }
+       
+    }
+    
+}
+class B implements Runnable{
+   
+    public void run(){
+        A.vote("BJP");
+        
+           
+        
+        
+    }
+}
+class C implements Runnable{
+   
+    public void run(){
+        A.vote("Congress");
+        
+           
+       
+    }
+}
+
+public class D
+{
+	public static void main(String[] args) {
+	 for(int i=1;i<=1000;i++)
+	   { 
+	    Thread t1= new Thread (new B());
+	    
+	     t1.start();
+	    	}
+	    	for(int i=1;i<=5;i++)
+	   { 
+	    Thread t2= new Thread (new C());
+	    
+	     t2.start();
+	    	}
+	    	 System.out.println("bjp won"+A.bjp);
+         System.out.println("congress "+A.congress);
+         if(A.bjp>A.congress){
+              System.out.println("bjp won by"+(A.bjp-A.congress));
+         }
+}
+}
