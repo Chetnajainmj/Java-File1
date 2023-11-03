@@ -1,0 +1,40 @@
+import java.util.*;
+class A{
+    String ac="123";
+   static int amount=5000;
+    public static void withdraw(int money){
+        amount=amount-money;
+        System.out.println(amount);
+            }
+        public static void deposit(int money){
+        amount=amount+money;
+        System.out.println(amount);
+            }
+    
+}
+class B extends Thread{
+   
+    public void run(){
+        A.withdraw(1000);
+    }
+}
+class C extends Thread{
+   
+    public void run(){
+        A.deposit(1000);
+    }
+}
+
+public class D
+{
+	public static void main(String[] args) {
+	 
+	    B b=new B();
+	      b.start();
+	    C c=new C();
+	   
+	   
+	  c.start();
+	
+	}
+}
