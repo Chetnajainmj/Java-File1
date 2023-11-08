@@ -1,0 +1,15 @@
+//task1-create a simple class having a method called as print array is that takes string array take arugement
+//task2- in old class p
+public class Main
+{
+
+	    public void printarray(String []s){
+	        for(int i=0;i<s.length;i++){	System.out.println(s[i]);}
+	    }
+	    
+		public static void main(String[] args) {
+		    Main e=new Main();
+		    String []s1=new String[]{"john","Ram","Shyam"};
+		    e.printarray(s1);
+	}
+}
