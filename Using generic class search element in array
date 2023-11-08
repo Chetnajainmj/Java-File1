@@ -1,0 +1,30 @@
+// create a generic class with 
+class Generic<E>{
+    
+    public int search(E []array,E key){
+       
+       for(int i=0;i<array.length;i++){
+           if(key==array[i]){
+               return i;
+           }
+           
+       }
+       return -1;
+    }
+    
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+		  Generic<Integer>m1=new Generic<Integer>();
+		    Integer []iarray={1,2,3,4,5};
+		    String []sarray={"Sita","geeta","Rani"};
+		   Generic<String> m2=new Generic<String> ();
+		 
+		  System.out.println("present at index "+m1.search(iarray,6));
+		   System.out.println("present at index "+m2.search(sarray,"Sita"));
+		  
+		  
+	}
+}
