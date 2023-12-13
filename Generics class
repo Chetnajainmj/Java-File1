@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+	Genericsclass<Integer>intobj=new Genericsclass<>(5);
+	  System.out.println("Genericsclass returns"+intobj.returnTheData());
+		Genericsclass<String>stringobj=new Genericsclass<>("Java programming");
+	  System.out.println("Genericsclass returns"+stringobj.returnTheData());
+	}
+}
+class Genericsclass<T>{
+    private T data;
+    public Genericsclass(T data){
+        this.data=data;
+        
+    }
+    public T returnTheData(){
+         return this.data;
+    }
+}
