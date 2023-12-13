@@ -1,0 +1,15 @@
+public class Main
+{
+	public static void main(String[] args) {
+	Callingclass call=new Callingclass();
+	call.<String>genericsmethod("429 727225 are main are nelan's luvky member");
+	call.<Integer>genericsmethod(25);
+call.<Boolean>genericsmethod(true);
+	}
+}
+class Callingclass{
+    public <T>void genericsmethod(T data){
+        System.out.println("Generics method");
+          System.out.println("data passed in"+data);
+    }
+}
